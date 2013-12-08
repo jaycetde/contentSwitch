@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="build/build.css" />
+        
+        <style>
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <div id="column1">
+                Column 1
+            </div>
+            
+            <div id="column2">
+                Column 2
+            </div>
+            
+            <div id="column3">
+                Column 3
+            </div>
+            
+            <div id="column4" data-default-content="true">
+                Column 4
+            </div>
+            
+        </div>
+        
+        <script src="build/build.js"></script>
+        <script>
+            
+            var contentSwitch = require('contentSwitch')
+              , content = contentSwitch(document.getElementById('container'))
+            ;
+            
+        </script>
+    </body>
+
+</html>
